@@ -1,11 +1,9 @@
 from typing import Optional
-
 from fastapi import FastAPI
-
-import random  # randomライブラリを追加
+from fastapi.responses import HTMLResponse  # 👈 これが新しく必要になります
+import random # randomライブラリを追加
 
 app = FastAPI()
-
 
 @app.get("/")
 async def root():
@@ -29,5 +27,22 @@ def omikuji():
         "小凶",
         "大凶"
     ]
-
     return omikuji_list[random.randrange(10)]
+
+
+# 👇 ここから下が課題9-1のコードです！
+@app.get("/index")
+def index():
+    html_content = """
+    <html>
+        <head>
+            <title>課題9-1 ホームページ</title>
+        </head>
+        <body>
+            <h1>前田くんの課題用ホームページへようこそ！</h1>
+            <p>FastAPIを使ってRenderへのデプロイに挑戦中。</p>
+            <p>ここを好きな文字に変えることで課題クリアになります！</p>
+        </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
