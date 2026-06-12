@@ -33,8 +33,8 @@ def omikuji():
 # webページ
 @app.get("/index")
 def index():
- html_content = """
-    <!DOCTYPE html>
+    html_content = """
+   <!DOCTYPE html>
     <html lang="ja">
         <head>
             <meta charset="UTF-8">
