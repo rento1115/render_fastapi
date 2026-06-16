@@ -13,6 +13,7 @@ async def root():
 def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 
+#おみくじ
 @app.get("/omikuji")
 def omikuji():
     omikuji_list = [
@@ -64,12 +65,6 @@ def index():
                     font-size: 1.1rem;
                     line-height: 1.6;
                 }
-                .highlight {
-                    background-color: #f1c40f;
-                    padding: 2px 6px;
-                    border-radius: 4px;
-                    font-weight: bold;
-                }
                 .btn {
                     display: inline-block;
                     margin-top: 20px;
@@ -87,10 +82,10 @@ def index():
         </head>
         <body>
             <div class="container">
-                <h1>🌐 課題9-1：Webページ公開テスト</h1>
+                <h1>🌐 課題9-1：Webページ公</h1>
                 <p>ネットワークプログラミングの課題用ページです。</p>
                 
-                <p>Pythonの <span class="highlight">FastAPI</span> でサーバーを構築し、<br>
+                <p>PythonのFastAPIでサーバーを構築し、<br>
                 GitHub経由で <strong>Render</strong> へのデプロイに成功しました！</p>
                 
                 <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
