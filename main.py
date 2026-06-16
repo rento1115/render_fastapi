@@ -99,4 +99,4 @@ def index():
 
 @app.post("/forge")
 async def forge_weapon(weapon_name: str):
-    return {"response": f"職人「おゥ、{weapon_name} を鍛え直してやったぜ！攻撃力が ＋100 された『伝説の {weapon_name}』の完成だ！」"}
+    return {"response": f"職人{weapon_name} を鍛え直してやったぜ！攻撃力が ＋100 された『伝説の{weapon_name}』の完成だ！」"}
