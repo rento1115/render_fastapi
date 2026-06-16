@@ -82,16 +82,15 @@ def index():
         </head>
         <body>
             <div class="container">
-                <h1>🌐 課題9-1：Webページ公</h1>
+                <h1>🌐 課題9-1：Webページ</h1>
                 <p>ネットワークプログラミングの課題用ページです。</p>
                 
                 <p>PythonのFastAPIでサーバーを構築し、<br>
-                GitHub経由で <strong>Render</strong> へのデプロイに成功しました！</p>
+                GitHub経由でRenderへのデプロイに成功しました！</p>
                 
                 <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
                 
-                <p>👇 さっき作ったおみくじ機能にもここから飛べます</p>
-                <a href="/omikuji" class="btn">今日のおみくじを引く 🔮</a>
+                <a href="/omikuji" class="btn">おみくじを引く</a>
             </div>
         </body>
     </html>
